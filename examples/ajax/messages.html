@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Messages</title>
+	<script>
+		function loadMessages() {
+			// Step 1: create an instance of XMLHttpRequest
+			request = new XMLHttpRequest();
+
+			// Step 2: Make request to remote resource
+			// NOTE: https://messagehub.herokuapp.com has cross-origin resource sharing enabled
+			request.open("get", "https://messagehub.herokuapp.com/messages.json", true);
+
+			// Step 3: Create handler function to do something with data in response
+			request.onreadystatechange = funex;
+
+			// Step 4: Send the request
+			request.send();
+		}
+
+		function funex() {
+			console.log("The data is => " + request.responseText);
+
+			// Step 5: When data is received, get it and do something with it
+			if (request.readyState == 4 && request.status == 200) {
+
+				// Step 5A: get the response text
+				theData = request.responseText;
+
+				// Step 5B: parse the text into JSON
+				messages = JSON.parse(theData);
+				
+				// Step 5C: use the JavaScript object
+				newHTML = "";
+				section = document.getElementById("messages");
+				for (count = 0; count < messages.length; count++) {
+					newHTML += "<p>" + messages[count]["username"] + " said " + messages[count]["content"] + "</p>";
+				}
+				section.innerHTML = newHTML;
+			}
+		}
+	</script>
+</head>
+
+<body onload="loadMessages()">
+	<h1>Messages</h1>
+	<div id="messages">Loading...</div>
+</body>
+</html>
