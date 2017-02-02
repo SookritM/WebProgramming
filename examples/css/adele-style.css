@@ -25,3 +25,16 @@ p {
 	padding: 50px;
 	background-color: green;
 }
+
+.chorus {
+	font-size: 72px;
+}
+
+#artist {
+	text-align: right;
+}
+
+p {
+	background-color: orange;
+	font-size: 14px;
+}
