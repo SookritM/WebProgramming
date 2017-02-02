@@ -1,0 +1,27 @@
+body {
+	background-color: indigo;
+	font-size: 28px;
+	font-family: Helvetica;
+	color: white;
+}
+
+/*
+
+Lines 1 - 6 (body {...}) => rule
+`body` in line 1 => selector
+Line 2 (`background-color: indigo;`) => declaration
+A single declaration is a key-value pair
+*/
+
+h1 {
+	text-align: center;
+	color: yellow;
+}
+
+p {
+	border-style: dashed;
+	margin-left: 10%;
+	font-size: 8px;
+	padding: 50px;
+	background-color: green;
+}
