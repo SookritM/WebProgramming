@@ -96,7 +96,7 @@
 * Your next lab
 * Why this technique?
 
-#Thursday, February 9th: JavaScript
+#Tuesday, February 14th: JavaScript
 * So far, we have covered quite a bit: HTTP, HTML, CSS, Git
 * What are the problems and limitations with just HTML and CSS?
 * HTTP: stateless protocol, no memory of previous requests
@@ -107,4 +107,88 @@
 * Operations: "+" is interesting
 * Function arguments: (1) too many: extras ignored, (2) too few: remainders get an undefined value
 * Lists (a.k.a., arrays)
-* _(Almost) everything in JavaScript is an object_ https://stackoverflow.com/questions/9108925/how-is-almost-everything-in-javascript-an-object
+* _(Almost)_ everything in JavaScript is an object_ https://stackoverflow.com/questions/9108925/how-is-almost-everything-in-javascript-an-object
+
+#Thursday, February 16th: Functions in JavaScript
+* Last class: JavaScript data and data structures (lists and dictionaries)
+* Recall: almost everything in JavaScript is a/an ______
+* Too many built-in JavaScript objects to name: string, Date, Math
+* Special object in JavaScript: the associative array a.k.a., dictionary a.k.a., hash a.k.a., finite map
+* So what about functions?
+* Who is in COMP 105 currently or have taken COMP 105?
+* What if I told you functions can be used as values to variables? Functions as arguments to functions? That's what it means by functions as first-class!
+* Consider example at http://www.joelonsoftware.com/items/2006/08/01.html
+* Recall Algebra: function composition
+* Why is this a powerful idea?
+  - Reduce repetitive code
+  - More reusable and scalable code
+  - "Object Oriented Programming" in JavaScript
+  - Example: `apply` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+* Is this idea that important in JavaScript? Yes, not only in JavaScript but in many languages and frameworks as well
+  - Events
+  - Callbacks (e.g., working with the GPS)
+  - Asynchronous communications (e.g., downloading data from the web within a running app)
+* Okay, but how do I use JavaScript in an HTML page?  Or how do I dynamically modify a loaded HTML page using JavaScript?
+
+#Tuesday, February 21st: Document Object Model (DOM)
+* Last class: "var", first class functions, we started talking about using JavaScript in an HTML page
+* The big idea: using JavaScript to dynamically modify HTML content _after it is loaded_.  Yes, you can mix HTML and JavaScript
+* We will apply the idea of first class functions
+* Definition: event
+* The document object: a JavaScript object that contains the entire structure of an HTML page after it is loaded, in tree-like format (thus, known as the Document Object Model tree).  Example of a DOM tree: https://developer.mozilla.org/en-US/docs/Using_the_W3C_DOM_Level_1_Core
+* Example 1: Tufts FML
+* Example 2: Prepending
+  `// The idea: create a new node and prepend to the first node in the "content" div
+        newElem = document.createElement("p");
+        newElem.innerHTML = '<p><span class="message">' +theMessage + " #FML</span></p>";
+        toUpdate.insertBefore(newElem, toUpdate.childNodes[0]);`
+* A powerful idea: update the HTML based on events
+* Example 3: Highlighting paragraphs in an HTML document
+* Example 4: Double Rainbow
+* Nex time: even more powerful idea: update the HTML with data from a web server
+* Your next lab
+* Your Assignment 2
+
+#Tuesday, February 28th: Asynchronous, XMLHttpRequest
+* Last class: events, modifying HTML after it is loaded using JavaScript via DOM
+* Last class + this week: you will start to see _why_ first class functions and JavaScript objects are so important
+* This week: asynchronous, limitations of JavaScript
+* So far, you have only worked with synchronous communications. Problem: slow, linear, "locking", not smooth
+* The bigger idea: asynchronous communications.  Where it is used: events
+* Real example: Twitter timeline.  Take a look at number of requests made _after page is loaded_
+* Another real example: email in the past vs Gmail
+* Are async and events the same? No. Are they related? Yes --almost all event handling functions are asynchronous.
+  - Asynchronous: "where data can be transmitted intermittently rather than in a steady stream"; not going at the same rate
+  - Are they the same? No. Are they related? Yes --almost all event handling functions are asynchronous.
+* The idea of XMLHttpRequest => make a request to a server-side script to get data, manage the response
+* XHR key methods and attributes: `open()`, `send()`, `onreadystatechange`, `status`, `readyState`, `responseText`
+* The data that now typically get back in the `responseText`: JSON
+* Client-side JS is heavily event-based
+* Examples of async APIs in JavaScript: `navigator.geolocation.getCurrentPosition()`, `XMLHttpRequest`
+* Finishing up on the XMLHttpRequest example:
+  - Asynchronous
+  - The event: onreadystatechange.  The readyState values:
+    - 0 => The request is not initialized
+    - 1 => The request has been set up
+    - 2 => The request has been sent
+    - 3 => The request is in process
+    - 4 => The request is complete
+* Parsing the JSON data
+* Is checking for readyState 4 good enough?  NO!
+* Caveats with XMLHttpRequest and one of the limitations of client-side JavaScript
+* JSON: Data exchange format (think text file).  JSON is string, NOT JavaScript objects.
+* Why JSON?
+* Example
+* Limitations of Client-Side JavaScript:
+  - Client-side tasks (or what you can do with client-side JavaScript)
+    - Dynamically modify browser content, e.g., with animation
+    - Dynamically fetch new documents from servers
+    - Allow new methods of user interaction other than links and buttons
+    - Get information about a user's computer (navigator.userAgent)
+  - Limitations of client-side scripts
+    - Other people cannot access data or information that you have (i.e., you can't make responses)
+    - Can't to write to files on disk
+    - You are constrained by web browser (i.e., browser incompatibility issues)
+    - Storage constraints (e.g., cookies, local storage)
+    - Security issues (e.g., same origin policy)
+    - View source
