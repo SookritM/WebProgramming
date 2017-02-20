@@ -131,7 +131,8 @@
 * Okay, but how do I use JavaScript in an HTML page?  Or how do I dynamically modify a loaded HTML page using JavaScript?
 
 #Tuesday, February 21st: Document Object Model (DOM)
-* Last class: "var", first class functions, we started talking about using JavaScript in an HTML page
+* Last class: first class functions
+* Today: the "var" keyword, using JavaScript in an HTML page
 * The big idea: using JavaScript to dynamically modify HTML content _after it is loaded_.  Yes, you can mix HTML and JavaScript
 * We will apply the idea of first class functions
 * Definition: event
