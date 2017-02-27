@@ -150,13 +150,16 @@
 * Your next lab
 * Your Assignment 2
 
-#Tuesday, February 28th: Asynchronous, XMLHttpRequest
+#Tuesday, February 28th and Thursday, March 2nd: Asynchronous, XMLHttpRequest, JSON
 * Last class: events, modifying HTML after it is loaded using JavaScript via DOM
+  - Notice: web page does not reload
+* We also saw the Twitter news feed and how content is retrieved from server(s) every so often
 * Last class + this week: you will start to see _why_ first class functions and JavaScript objects are so important
+* I really enjoy teaching this class online.  Notice the interactions that we have on Piazza......
 * This week: asynchronous, limitations of JavaScript
 * So far, you have only worked with synchronous communications. Problem: slow, linear, "locking", not smooth
 * The bigger idea: asynchronous communications.  Where it is used: events
-* Real example: Twitter timeline.  Take a look at number of requests made _after page is loaded_
+* (Recall) example: Twitter timeline.  Take a look at number of requests made _after page is loaded_
 * Another real example: email in the past vs Gmail
 * Are async and events the same? No. Are they related? Yes --almost all event handling functions are asynchronous.
   - Asynchronous: "where data can be transmitted intermittently rather than in a steady stream"; not going at the same rate
