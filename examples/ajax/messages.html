@@ -5,40 +5,33 @@
 	<title>Messages</title>
 	<script>
 		function loadMessages() {
-			// Step 1: create an instance of XMLHttpRequest
+			// Step 1: make an instance of XMLHttpRequest object
 			request = new XMLHttpRequest();
 
-			// Step 2: Make request to remote resource
-			// NOTE: https://messagehub.herokuapp.com has cross-origin resource sharing enabled
-			request.open("get", "https://messagehub.herokuapp.com/messages.json", true);
+			// Step 2: set up request
+			request.open("GET", "https://messagehub.herokuapp.com/messages.json", true);
 
-			// Step 3: Create handler function to do something with data in response
-			request.onreadystatechange = funex;
+			console.log("Hello all you happy people 1");
 
-			// Step 4: Send the request
-			request.send();
-		}
-
-		function funex() {
-			console.log("The data is => " + request.responseText);
-
-			// Step 5: When data is received, get it and do something with it
-			if (request.readyState == 4 && request.status == 200) {
-
-				// Step 5A: get the response text
-				theData = request.responseText;
-
-				// Step 5B: parse the text into JSON
-				messages = JSON.parse(theData);
-				
-				// Step 5C: use the JavaScript object
-				newHTML = "";
-				section = document.getElementById("messages");
-				for (count = 0; count < messages.length; count++) {
-					newHTML += "<p>" + messages[count]["username"] + " said " + messages[count]["content"] + "</p>";
+			// Step 3: set up handler function to deal with response
+			request.onreadystatechange = function() {
+				console.log("Hello all you happy people 2");
+				if (request.readyState == 4 && request.status == 200) {
+					// Step 5: do something with the response data...
+					// JSON.parse() does the parsing
+					elements = JSON.parse(request.responseText);
+					newData = "";
+					for (count = 0; count < elements.length; count++) {
+						newData += "<p>" + elements[count]["content"] + " by " + elements[count].username + "</p>";
+					}
+					document.getElementById("messages").innerHTML = newData;
 				}
-				section.innerHTML = newHTML;
-			}
+			};
+
+			console.log("Hello all you happy people 3");
+			// Step 4: actually send the request
+			request.send();
+			console.log("Hello all you happy people 4");
 		}
 	</script>
 </head>
