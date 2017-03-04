@@ -182,7 +182,8 @@
 * Caveats with XMLHttpRequest and one of the limitations of client-side JavaScript
 * JSON: Data exchange format (think text file).  JSON is string, NOT JavaScript objects.
 * Why JSON?
-* Example
+
+#Tuesday, March 7th: jQuery
 * Limitations of Client-Side JavaScript:
   - Client-side tasks (or what you can do with client-side JavaScript)
     - Dynamically modify browser content, e.g., with animation
@@ -196,3 +197,33 @@
     - Storage constraints (e.g., cookies, local storage)
     - Security issues (e.g., same origin policy)
     - View source
+* How I designed Assignment 2
+  - Your responsibility to deal with errors
+  - Some flexibility
+  - Some open-endedness, force you to ask questions
+  - More than one acceptable way to solve the problem, deal with engineering tradeoffs
+  - Opportunities for the future
+* jQuery examples
+* What's the point of jQuery?
+  - Write shorter code
+  - Don't need to deal with brower incompatibility issues
+* But why did we learn JS first?!?!?
+  - Need basic vocabulary
+  - How $() works => DOM
+  - How $.ajax, $.get, $.post all work => XHR
+
+#Thursday, March 9th: Persistence with Cookies and Local Storage
+* Last class: S.O.P. in client-side JavaScript
+* Motivation: a certain project at PolyHack caught my attention...
+* Today: storing data over time
+* What can't we do, knowing the limitations of client-side JavaScript.
+* What we have learned so far in this course: key-value pairs
+* Two basic storage mechanisms on the client-side: cookies, local storage
+* Cookies: 4 KB max, there is a max number of cookies per domain
+* Local storage: ~5 MB per domain
+* The finer point: both cookies are local storage are still bound by Same Origin Policy
+* Examples
+
+#Tuesday, March 14th and Thursday, March 16th: Server-Side and Web Applications
+* Local storage vs session storage: http://stackoverflow.com/questions/5523140/html5-local-storage-vs-session-storage
+* Local storage example (Hacker Stream)

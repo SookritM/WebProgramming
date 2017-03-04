@@ -11,11 +11,8 @@
 			// Step 2: set up request
 			request.open("GET", "https://messagehub.herokuapp.com/messages.json", true);
 
-			console.log("Hello all you happy people 1");
-
 			// Step 3: set up handler function to deal with response
 			request.onreadystatechange = function() {
-				console.log("Hello all you happy people 2");
 				if (request.readyState == 4 && request.status == 200) {
 					// Step 5: do something with the response data...
 					// JSON.parse() does the parsing
@@ -28,10 +25,8 @@
 				}
 			};
 
-			console.log("Hello all you happy people 3");
 			// Step 4: actually send the request
 			request.send();
-			console.log("Hello all you happy people 4");
 		}
 	</script>
 </head>
