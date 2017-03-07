@@ -211,6 +211,7 @@
   - Need basic vocabulary
   - How $() works => DOM
   - How $.ajax, $.get, $.post all work => XHR
+* Midsemester eval
 
 #Thursday, March 9th: Persistence with Cookies and Local Storage
 * Last class: S.O.P. in client-side JavaScript
