@@ -270,6 +270,8 @@
   4. Add-on modules that you need.  For all web applications developed using Express.js, a file `package.json` is required.  The file is a list of requirements / dependencies for the web application.  Think of this as the ingredients for a recipe.  Then install all the requirements / dependencies via `npm install`
 * Heroku and pushing your application to Heroku
 * Assignment 3
+* Making HTTP POST requests
+* A fine point: data sent to a web server is always text!
 
 #Thursday, March 31st: MongoDB: Data Persistence with MongoDB, Connecting Node.js with MongoDB
 * A simple and complex picture of client-server architecture: https://www.acunetix.com/websitesecurity/web-applications/
@@ -290,7 +292,7 @@
 * Important: inserting a document into a database that does not exist WILL create the database!
 * Wait, I'm confused: we are dealing with two different systems here. How do you have a Node.js server talk to a MongoDB server? The answer: a driver. A driver is a piece of software for accessing a database.  Think of this as a translation engine.  There is a `mongodb` driver for Node.js
 * Example: https://github.com/tuftsdev/WebProgramming/tree/gh-pages/examples/nodejs/nodemongoapp.  Feel free to copy and use initialization code.  It will help you big time!
-* A fine point: data sent to a web server is always text!
+* Quiz 2
 
 #Tuesday, April 4th, Loose Ends
 * Node.js + MongoDB
