@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz 2 Question 10</title>
+<script>
+	var request = new XMLHttpRequest();
+	request.open("GET", "news.json", true);
+	request.onreadystatechange = funex;
+	request.send();
+	console.log("And I'm hangin' on a moment with you");
+
+	function funex() {
+		if (request.readyState == 4) {
+		console.log("I'm on the edge of glory");
+		}
+	}
+</script>
+</head>
+
+<body>
+	<h1>See the JavaScript console...</h1>
+</body>
+</html>
