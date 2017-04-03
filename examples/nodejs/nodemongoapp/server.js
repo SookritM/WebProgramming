@@ -36,8 +36,7 @@ app.post('/feedme', function(request, response) {
 				response.send(500);
 			}
 			else {
-				//response.send(200);
-				response.send('<!DOCTYPE HTML><html><head><title>Thanks</title></head><body><h1>Thank You!</h1><p>Thank you for your submission.  Your submission has been recorded successfully.  <a href="/">Return to the list of food items entered (or what was fed to the monster).</a></p></body></html>');
+				response.send(200);
 			}
 	    });
 	});
@@ -47,11 +46,11 @@ app.get('/', function(request, response) {
 	response.set('Content-Type', 'text/html');
 	var indexPage = '';
 	db.collection('fooditems', function(er, collection) {
-		collection.find().toArray(function(err, cursor) {
+		collection.find().toArray(function(err, results) {
 			if (!err) {
 				indexPage += "<!DOCTYPE HTML><html><head><title>What Did You Feed Me?</title></head><body><h1>What Did You Feed Me?</h1>";
-				for (var count = 0; count < cursor.length; count++) {
-					indexPage += "<p>You fed me " + cursor[count].food + "!</p>";
+				for (var count = 0; count < results.length; count++) {
+					indexPage += "<p>You fed me " + results[count].food + "!</p>";
 				}
 				indexPage += "</body></html>"
 				response.send(indexPage);
