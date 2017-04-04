@@ -5,7 +5,7 @@ A Node.js + Express + MongoDB web application.  There are two routes in this web
 2. `GET /` - the home page.  This displays all the data stored in the MongoDB collection named `fooditems` in a database named `nodemongoexample`.
 
 #About the Files
-* `app.js` - the source of the server
+* `server.js` - the source of the server
 * `package.json` -  This file holds various metadata relevant to the project. This file is used to give information to `npm` that allows it to identify the project as well as handle the project's dependencies (VERY important).  See https://docs.npmjs.com/files/package.json for more details on what goes in to a `package.json` file.
 * `Procfile` - Required by Heroku.  A `Procfile` "is a mechanism for declaring what commands are run by your application's dynos on the Heroku platform."  In other words, it must specify which is the entry source file (i.e., the `app.js` file).  See https://devcenter.heroku.com/articles/procfile for more details.
 
