@@ -36,7 +36,7 @@ app.post('/feedme', function(request, response) {
 				response.send(500);
 			}
 			else {
-				response.send(200);
+				response.send('<html><head><title>Thanks!</title></head><body><h2>Thanks for your submission!</h2></body></html>');
 			}
 	    });
 	});
@@ -45,8 +45,15 @@ app.post('/feedme', function(request, response) {
 app.get('/', function(request, response) {
 	response.set('Content-Type', 'text/html');
 	var indexPage = '';
+
+	// Line 50: equivalent to `db.fooditems` in MongoDB client shell
 	db.collection('fooditems', function(er, collection) {
+
+		// Line 53: equivalent to `db.fooditems.find()` in MongoDB client shell
 		collection.find().toArray(function(err, results) {
+
+			// All results of db.fooditems.find() will go into...
+			// ...`results`.  `results` will be an array (or list)
 			if (!err) {
 				indexPage += "<!DOCTYPE HTML><html><head><title>What Did You Feed Me?</title></head><body><h1>What Did You Feed Me?</h1>";
 				for (var count = 0; count < results.length; count++) {
