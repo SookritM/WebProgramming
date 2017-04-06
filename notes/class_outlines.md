@@ -325,13 +325,9 @@
 * Case study: "How to buy a 65” Plasma for $.99" http://www.edgeblog.net/2006/how-to-buy-a-plasma-for-99/
 * Database injection attack in MongoDB
 
-# Thursday, April 13th
+#Thursday, April 13th
 * Last class: web security, part 2
 * Assignment 4
-* Semester Group Project: For each semester group project team on Thursday, prepare a short technical lightning talk (3 - 5 minutes) to the class on something that your team has learned in the semester group project.  This could be anything: the Facebook API, MySQL, Angular, etc.  The points of a lighting talk:
-  1. To demonstrate growth and application of material
-  2. To teach something new to the class.  We can't teach everything in this course.
-  3. To share ideas
 * No slides necessary for a lightning talk
 * Some reads on how to give a good lightning talk:
   - http://www.perl.com/pub/2004/07/30/lightningtalk.html
@@ -342,3 +338,24 @@
 * For the next few class days, answer: "what's the point?"
 * What's the point --of web security?
 * What's the point --of everything? https://github.com/alex/what-happens-when
+
+#Tuesday, April 18th
+* Semester Group Project: For each semester group project team on Thursday, prepare a short technical lightning talk (3 - 5 minutes) to the class on something that your team has learned in the semester group project.  This could be anything: the Facebook API, MySQL, Angular, etc.  The points of a lighting talk:
+  1. To demonstrate growth and application of material
+  2. To teach something new to the class.  We can't teach everything in this course.
+  3. To share ideas
+* Quiz 3
+
+#Thursday, April 20th: Semester Group Project
+* What's the point of semester group project?
+  - Applying what you have learned
+  - Scope down
+  - Dealing with adversity
+  - Show the rejection letter
+
+#Tuesday, April 25th: Looking Ahead
+* Course evaluations
+* You've barely scratched the surface
+  - What reality is really like
+  - What engineering issues do you see here?
+  - Want to learn and build something over the break?
