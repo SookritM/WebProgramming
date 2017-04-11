@@ -324,6 +324,8 @@
 * Bypassing client-side validation using a proxy
 * Case study: "How to buy a 65” Plasma for $.99" http://www.edgeblog.net/2006/how-to-buy-a-plasma-for-99/
 * Database injection attack in MongoDB
+* Directory traversal: https://www.acunetix.com/websitesecurity/directory-traversal/
+  - Sadly, still exists: https://www.theregister.co.uk/2017/03/26/miele_joins_internetofst_hall_of_shame/
 
 #Thursday, April 13th
 * Last class: web security, part 2
