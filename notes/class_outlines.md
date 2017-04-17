@@ -346,14 +346,15 @@
   1. To demonstrate growth and application of material
   2. To teach something new to the class.  We can't teach everything in this course.
   3. To share ideas
-* Quiz 3
-
-#Thursday, April 20th: Semester Group Project
 * What's the point of semester group project?
   - Applying what you have learned
   - Scope down
   - Dealing with adversity
   - Show the rejection letter
+* One last lab...
+* Quiz 3
+
+#Thursday, April 20th: Semester Group Project
 
 #Tuesday, April 25th: Looking Ahead
 * Course evaluations
