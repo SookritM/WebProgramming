@@ -1,4 +1,4 @@
-#Thursday, January 19th: Course Introduction
+# Thursday, January 19th: Course Introduction
 * Course wait-list
 * Why (still) the web?  Why are you here?
 * Motivation 1, the first web page (1992): http://info.cern.ch/hypertext/WWW/TheProject.html
@@ -8,7 +8,7 @@
 * How two computers talk to each other: basic networking
 * The Internet vs the World Wide Web
 
-#Tuesday, January 24th: HTTP
+# Tuesday, January 24th: HTTP
 * PSA on sexual harassment
 * Last class: the big ideas?
 * Recall telephone conversation example
@@ -25,7 +25,7 @@
 * Demo: Web server
 * Q: How to browse web without web browser?
   
-#Tuesday, January 26th: HTML
+# Tuesday, January 26th: HTML
 * Last class: recall how HTTP works
 * Recall question: if no port number is provided, the default port number to connect to on web server is...?
 * Recall question: what HTTP command is executed when entering URL address?
@@ -43,7 +43,7 @@
 * What's wrong with the HTML?
 * W3C validator
 
-#Tuesday, January 31st: Revision Control with Git
+# Tuesday, January 31st: Revision Control with Git
 * Last class: HTML => for the content, for document appearance and behavior, W3C validator
 * Last class: Two major types of HTML body elements: block level and inline
 * Recall question: difference between absolute and relative URLs --which to use for portability?
@@ -64,7 +64,7 @@
 * Example with our course website
 * IMPORTANT: you are not expected to master Git by the end of this course.  The reality, even for the most seasoned people: https://twitter.com/ErrataRob/status/707327952158121984
 
-#Thursday, February 2nd: Cascading Style Sheets (CSS)
+# Thursday, February 2nd: Cascading Style Sheets (CSS)
 * Why do you want to separate style?
 * One CSS _rule_ is made up of _selectors_ and _declarations_. A declaration is a _property-value_ pair.
   - You really want to refer to a CSS cheat sheet!
@@ -79,7 +79,7 @@
 * The "cascading" in "cascading style sheet"
   - What if there is more than one style specified for an HTML element?
 
-#Tuesday, February 7th: Responsive Design
+# Tuesday, February 7th: Responsive Design
 * Last class: CSS
 * Why CSS?  What do they give you?
 * Recall: id vs class
@@ -96,7 +96,7 @@
 * Your next lab
 * Why this technique?
 
-#Tuesday, February 14th: JavaScript
+# Tuesday, February 14th: JavaScript
 * So far, we have covered quite a bit: HTTP, HTML, CSS, Git
 * What are the problems and limitations with just HTML and CSS?
 * HTTP: stateless protocol, no memory of previous requests
@@ -109,7 +109,7 @@
 * Lists (a.k.a., arrays)
 * _(Almost)_ everything in JavaScript is an object_ https://stackoverflow.com/questions/9108925/how-is-almost-everything-in-javascript-an-object
 
-#Thursday, February 16th: Functions in JavaScript
+# Thursday, February 16th: Functions in JavaScript
 * Last class: JavaScript data and data structures (lists and dictionaries)
 * Recall: almost everything in JavaScript is a/an ______
 * Too many built-in JavaScript objects to name: string, Date, Math
@@ -130,7 +130,7 @@
   - Asynchronous communications (e.g., downloading data from the web within a running app)
 * Okay, but how do I use JavaScript in an HTML page?  Or how do I dynamically modify a loaded HTML page using JavaScript?
 
-#Tuesday, February 21st: Document Object Model (DOM)
+# Tuesday, February 21st: Document Object Model (DOM)
 * Last class: first class functions
 * Today: the "var" keyword, using JavaScript in an HTML page
 * The big idea: using JavaScript to dynamically modify HTML content _after it is loaded_.  Yes, you can mix HTML and JavaScript
@@ -150,7 +150,7 @@
 * Your next lab
 * Your Assignment 2
 
-#Tuesday, February 28th and Thursday, March 2nd: Asynchronous, XMLHttpRequest, JSON
+# Tuesday, February 28th and Thursday, March 2nd: Asynchronous, XMLHttpRequest, JSON
 * Last class: events, modifying HTML after it is loaded using JavaScript via DOM
   - Notice: web page does not reload
 * We also saw the Twitter news feed and how content is retrieved from server(s) every so often
@@ -183,7 +183,7 @@
 * JSON: Data exchange format (think text file).  JSON is string, NOT JavaScript objects.
 * Why JSON?
 
-#Tuesday, March 7th: jQuery
+# Tuesday, March 7th: jQuery
 * Limitations of Client-Side JavaScript:
   - Client-side tasks (or what you can do with client-side JavaScript)
     - Dynamically modify browser content, e.g., with animation
@@ -213,7 +213,7 @@
   - How $.ajax, $.get, $.post all work => XHR
 * Midsemester eval
 
-#Thursday, March 9th: Persistence with Cookies and Local Storage
+# Thursday, March 9th: Persistence with Cookies and Local Storage
 * Last class: S.O.P. in client-side JavaScript
 * Motivation: a certain project at PolyHack caught my attention...
 * Today: storing data over time
@@ -229,7 +229,7 @@
 * Local storage vs session storage: http://stackoverflow.com/questions/5523140/html5-local-storage-vs-session-storage
 * Local storage example (Hacker Stream)
 
-#Tuesday, March 14th and Thursday, March 16th: Server-Side and Web Applications
+# Tuesday, March 14th and Thursday, March 16th: Server-Side and Web Applications
 * What are the limitations of client-side?
   1. Can't connect to a database server directly --and hence, store lots and lots of data
   2. Other people cannot access data or information that you have (i.e., you can't make responses)
@@ -256,7 +256,7 @@
 * Implementation 1 (ugly): Node.js => write server-side programs using JavaScript
 * Implementation 2 (cleaner using Express framework)
   
-#Tuesday, March 28th: Server-Side (continued), Frameworks
+# Tuesday, March 28th: Server-Side (continued), Frameworks
 * Last class: the server side, Node.js, Express
 * Option A: https://github.com/tuftsdev/WebProgramming/blob/gh-pages/examples/nodejs/server.js
 * Option B: https://github.com/tuftsdev/WebProgramming/blob/gh-pages/examples/nodejs/simpleexpress/app.js
@@ -273,7 +273,7 @@
 * Making HTTP POST requests
 * A fine point: data sent to a web server is always text!
 
-#Thursday, March 31st: MongoDB: Data Persistence with MongoDB, Connecting Node.js with MongoDB
+# Thursday, March 31st: MongoDB: Data Persistence with MongoDB, Connecting Node.js with MongoDB
 * A simple and complex picture of client-server architecture: https://www.acunetix.com/websitesecurity/web-applications/
 * So far, we have talked about the middle tier using Node.js and Express.js (framework on top of Node.js)
 * Handling data via HTTP POST...
@@ -294,7 +294,7 @@
 * Example: https://github.com/tuftsdev/WebProgramming/tree/gh-pages/examples/nodejs/nodemongoapp.  Feel free to copy and use initialization code.  It will help you big time!
 * Quiz 2
 
-#Tuesday, April 4th, Loose Ends
+# Tuesday, April 4th, Loose Ends
 * Node.js + MongoDB
 * Difference between MongoDB commands and MongoDB commands via Node.js MongoDB driver
 * To understand Assignment 3, draw it out.
@@ -304,7 +304,7 @@
 * "I’ve Just Liberated My Modules" https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.aandh88ud. Discussion on Hacker News: https://news.ycombinator.com/item?id=11340510
 * "NPM & left-pad: Have We Forgotten How To Program?" http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/. Discussion on Hacker News: https://news.ycombinator.com/item?id=11348798
 
-#Thursday, April 6th: Web Security, Part 1
+# Thursday, April 6th: Web Security, Part 1
 * Recall: data sent to a web server is always text!
 * Revisiting `nodemongoapp`
 * There's something wrong with it. What if...
@@ -318,7 +318,7 @@
 * How bad is this problem? http://www.slideshare.net/elie-bursztein/lessons-learned-while-protecting-gmail
 * The moral of the story...
 
-#Tuesday, April 11th: Web Security, Part 2
+# Tuesday, April 11th: Web Security, Part 2
 * Last class: cross-site scripting (XSS) and web security 101
 * Playground: http://www.cs.tufts.edu/comp/20/hackme.php
 * Bypassing client-side validation using a proxy
@@ -327,7 +327,7 @@
 * Directory traversal: https://www.acunetix.com/websitesecurity/directory-traversal/
   - Sadly, still exists: https://www.theregister.co.uk/2017/03/26/miele_joins_internetofst_hall_of_shame/
 
-#Thursday, April 13th
+# Thursday, April 13th
 * Last class: web security, part 2
 * Assignment 4
 * No slides necessary for a lightning talk
@@ -341,7 +341,7 @@
 * What's the point --of web security?
 * What's the point --of everything? https://github.com/alex/what-happens-when
 
-#Tuesday, April 18th
+# Tuesday, April 18th
 * Semester Group Project: For each semester group project team on Thursday, prepare a short technical lightning talk (3 - 5 minutes) to the class on something that your team has learned in the semester group project.  This could be anything: the Facebook API, MySQL, Angular, etc.  The points of a lighting talk:
   1. To demonstrate growth and application of material
   2. To teach something new to the class.  We can't teach everything in this course.
@@ -354,9 +354,9 @@
 * One last lab...
 * Quiz 3
 
-#Thursday, April 20th: Semester Group Project
+# Thursday, April 20th: Semester Group Project
 
-#Tuesday, April 25th: Looking Ahead
+# Tuesday, April 25th: Looking Ahead
 * Course evaluations
 * You've barely scratched the surface
   - What reality is really like
@@ -387,7 +387,7 @@
   - Further application of this course => Wearables (COMP 50)
     - See how Chris Gregg, Kate Wasynczuk, and Raewyn Duvall designed the course: https://docs.google.com/presentation/d/14vuu3Jc54vGYdguF4wE4pChx6nB87dZEOVXxRjd38Mg/edit?usp=sharing
 * What's the point....
-  - Of looking things up via Google, Stack Overflow => **take responsibility of your own learning, develop intellectual curiosity.  If you can't do these things, then perhaps CS is not for you as they are basic skills necessary for higher level courses (e.g., COMP 105, see http://www.cs.tufts.edu/comp/105/notes.html#toc15)**
+  - Of looking things up via Google, Stack Overflow => **take responsibility of your own learning, develop intellectual curiosity.  If you can't do these things, then perhaps CS is not for you as they are basic skills necessary for higher level courses (e.g., COMP 105, see http://www.cs.tufts.edu/comp/105/notes.html# Toc15)**
   - Of ask questions, asking for help => **ditto and _"knowing how to ask for help is the key to survival"_ --Alva Couch**
   - Of me providing you readings that may go over your head => **get out of your comfort zone**
   - Of using revision control and GitHub, Heroku => **develop good habits, use real tools and systems. Many friends and colleagues have lament our Comp Sci grads are not prepared to build with today's evolving platforms.**
@@ -400,7 +400,6 @@
   - Get out of your comfort zone
 * Your portfolio: my gift to you
   - https://github.com/blog/2343-why-version-control-is-required-for-comp-20-at-tufts-university
-  - 
 * Personal thoughts
 * Now: you can serve your work via GitHub and the `gh-pages` branch.
 * Acknowledgements
