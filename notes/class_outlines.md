@@ -391,6 +391,7 @@
   - Of ask questions, asking for help => **ditto and _"knowing how to ask for help is the key to survival"_ --Alva Couch**
   - Of me providing you readings that may go over your head => **get out of your comfort zone**
   - Of using revision control and GitHub, Heroku => **develop good habits, use real tools and systems. Many friends and colleagues have lament our Comp Sci grads are not prepared to build with today's evolving platforms.**
+    - FOUND IT! http://www.cs.tufts.edu/~nr/students/scm.html
   - Of making you write READMEs for every lab and assignment, Assignment 4 => **writing skills; articulate what you've learned**
 * The real messages of this class
   - What you COULD do
