@@ -361,4 +361,46 @@
 * You've barely scratched the surface
   - What reality is really like
   - What engineering issues do you see here?
-  - Want to learn and build something over the break?
+  - Want to learn and build something over the break?  Mobile app that renders a map of the MBTA stations from your Lab 7.
+* The big ideas from this class:
+  - key-value pairs
+  - Separation of concerns (CSS, server architecture)
+  - Don't reinvent the wheel
+  - Client-server, basics of distributed systems
+  - Never trust user input
+  - Events and asynchronous
+  - Revision control
+  - Attention to details
+  - Learning how to learn
+  - Communications
+* Where do you go from here?
+  - Web infrastructure and standards => COMP 150-IDS Internet-Scale Distributed Systems (Noah's course)
+  - Objects, first-class functions, closures => COMP 105: Programming Languages
+  - Internet and networking => COMP 112: Networking
+  - The engineering side of the web => COMP 120: Web Engineering
+  - NoSQL (e.g., MongoDB) vs. SQL databases => COMP 115: Databases
+  - Security => COMP 116: Security
+  - Programming skills and personal maturity => COMP 40
+  - Concurrent uses and how to write a chat or web server => COMP 50: Concurrency
+  - User interface(s) => COMP 171
+  - Mobile => various
+  - Further application of this course => Wearables (COMP 50)
+    - See how Chris Gregg, Kate Wasynczuk, and Raewyn Duvall designed the course: https://docs.google.com/presentation/d/14vuu3Jc54vGYdguF4wE4pChx6nB87dZEOVXxRjd38Mg/edit?usp=sharing
+* What's the point....
+  - Of looking things up via Google, Stack Overflow => **take responsibility of your own learning, develop intellectual curiosity.  If you can't do these things, then perhaps CS is not for you as they are basic skills necessary for higher level courses (e.g., COMP 105, see http://www.cs.tufts.edu/comp/105/notes.html#toc15)**
+  - Of ask questions, asking for help => **ditto and _"knowing how to ask for help is the key to survival"_ --Alva Couch**
+  - Of me providing you readings that may go over your head => **get out of your comfort zone**
+  - Of using revision control and GitHub, Heroku => **develop good habits, use real tools and systems. Many friends and colleagues have lament our Comp Sci grads are not prepared to build with today's evolving platforms.**
+  - Of making you write READMEs for every lab and assignment, Assignment 4 => **writing skills; articulate what you've learned**
+* The real messages of this class
+  - What you COULD do
+  - Build your intellectual curiosity
+  - Engineering and code are not everything
+  - Learn how to learn
+  - Get out of your comfort zone
+* Your portfolio: my gift to you
+  - https://github.com/blog/2343-why-version-control-is-required-for-comp-20-at-tufts-university
+  - 
+* Personal thoughts
+* Now: you can serve your work via GitHub and the `gh-pages` branch.
+* Acknowledgements
