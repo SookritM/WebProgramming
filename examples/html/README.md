@@ -1,9 +1,9 @@
-#Overview
+# Overview
 HTML examples.
 
 `index.html` is an example that uses relative and absolute URLs. The relative URLs are to the images (memes).
 
-#Good Form HTML Commandments
+# Good Form HTML Commandments
 
 1. Thou shall not use the extension .htm.
 2. Thou shall not use whitepace in file name.
@@ -20,5 +20,5 @@ HTML examples.
 13. Thou shall always give an HTML page a title in the <head> section.
 14. Thou shall always validate HTML markup at https://validator.w3.org/.
 
-#Exercise
+# Exercise
 1. Identify all the problems in `fail.html`

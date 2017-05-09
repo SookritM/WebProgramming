@@ -1,4 +1,4 @@
-#Overview
+# Overview
 A few examples that uses the Google Maps JavaScript API and the `navigator.geolocation` JavaScript API to determine your location (latitude and longitude):
 
 * `getmylocation.html` - Determines your location (latitude and longitude) using the `navigator.geolocation` JavaScript API.  *Pay attention to when each of the `console.log()` statements are called.  This will help you understand when callbacks are executed and the idea of event-based programming in JavaScript.*
