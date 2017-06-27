@@ -16,6 +16,10 @@ A Node.js + Express + MongoDB web application.  There are two routes in this web
 
 Please note: each time you add a dependency to the `package.json` file, you must re-run `npm install`.
 
+Screenshot of how running this example locally should look (on Mac OS X ):
+
+![Screenshot of how running this example locally should look (on Mac OS X )](screenshot.png)
+
 # Sending Data to Server
 Use `curl` to execute an HTTP POST request.  That is, send some data to the server.  Example: `curl --data "food=pizza" http://localhost:3000/feedme`
 

@@ -5,6 +5,6 @@
 		"express": "latest",
 		"mongodb": "latest",
 		"body-parser": "latest",
-		"validator":"latest"
+		"validator": "latest"
 	}
 }
